@@ -1,1 +1,106 @@
-hi
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>მაღაზიის წესები</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    h1, h2 {
+      color: #000;
+    }
+    .language-switch {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+    .language-switch button {
+      margin-left: 10px;
+      padding: 6px 12px;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      background-color: white;
+    }
+    .lang {
+      display: none;
+    }
+    .lang.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="language-switch">
+    <button onclick="switchLanguage('ka')">ქართული</button>
+    <button onclick="switchLanguage('en')">English</button>
+  </div>
+
+  <!-- Georgian Version (default) -->
+  <div id="ka" class="lang active">
+    <h1>მაღაზიის წესები</h1>
+
+    <h2>1. დაბრუნება და ანაზღაურება</h2>
+    <p>
+      ყველა გაყიდვა საბოლოოა. არ ვიღებთ დაბრუნებებს, გაცვლას ან ანაზღაურებას. გთხოვთ, ფრთხილად გადაამოწმეთ შეკვეთა შეძენამდე.
+    </p>
+
+    <h2>2. შეკვეთის პრობლემები</h2>
+    <p>
+      თუ მიიღეთ არასწორი ან დაზიანებული ნივთი, დაგვიკავშირდით მიწოდებიდან 3 დღის განმავლობაში. შევეცდებით პრობლემის გადაწყვეტას.
+    </p>
+
+    <h2>3. მიწოდება</h2>
+    <p>
+      შეკვეთებს ვამზადებთ და ვაგზავნით 2–5 სამუშაო დღის განმავლობაში. ტრანსპორტირების დრო დამოკიდებულია თქვენს მდებარეობაზე.
+      მაღაზია არ არის პასუხისმგებელი საკურიერო კომპანიის დაგვიანებაზე.
+    </p>
+
+    <h2>4. კონტაქტი</h2>
+    <p>
+      შეკითხვების ან პრობლემების შემთხვევაში დაგვიკავშირდით ელფოსტით ან საკონტაქტო გვერდზე.
+    </p>
+  </div>
+
+  <!-- English Version -->
+  <div id="en" class="lang">
+    <h1>Store Policy</h1>
+
+    <h2>1. No Returns or Refunds</h2>
+    <p>
+      All sales are final. We do not accept returns, exchanges, or issue refunds under any circumstances.
+      Please carefully review your order before purchase.
+    </p>
+
+    <h2>2. Order Issues</h2>
+    <p>
+      If you receive a wrong or damaged item, contact us within 3 days of delivery. We will try to resolve the issue.
+    </p>
+
+    <h2>3. Shipping</h2>
+    <p>
+      Orders are processed and shipped within 2–5 business days. Shipping time depends on your location.
+      We are not responsible for shipping carrier delays.
+    </p>
+
+    <h2>4. Contact</h2>
+    <p>
+      For questions or issues, contact us by email or through our contact page.
+    </p>
+  </div>
+
+  <script>
+    function switchLanguage(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
