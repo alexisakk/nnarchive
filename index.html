@@ -10,28 +10,55 @@
       max-width: 800px;
       margin: 40px auto;
       padding: 20px;
-      background-color: #f8f8f8;
-      color: #333;
+      background: linear-gradient(to top, #1e1e1e, #2a2a2a); /* subtle gradient */
+      color: #e0e0e0; /* light gray text for better readability */
     }
+
     h1, h2 {
-      color: #000;
+      color: #ffffff;
     }
+
     .language-switch {
       text-align: right;
       margin-bottom: 20px;
     }
+
     .language-switch button {
       margin-left: 10px;
       padding: 6px 12px;
       cursor: pointer;
-      border: 1px solid #ccc;
-      background-color: white;
+      border: 1px solid #444;
+      background-color: #2e2e2e;
+      color: #fff;
+      transition: background 0.2s ease;
     }
+
+    .language-switch button:hover {
+      background-color: #3a3a3a;
+    }
+
     .lang {
       display: none;
     }
+
     .lang.active {
       display: block;
+    }
+
+    .title-container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .title-container img {
+      height: 40px;
+      width: auto;
+    }
+
+    p {
+      color: #cccccc;
     }
   </style>
 </head>
@@ -44,7 +71,10 @@
 
   <!-- Georgian Version (default) -->
   <div id="ka" class="lang active">
-    <h1>მაღაზიის წესები</h1>
+    <div class="title-container">
+      <img src="YOUR_IMAGE_URL_HERE" alt="Policy Icon">
+      <h1>მაღაზიის წესები</h1>
+    </div>
 
     <h2>1. დაბრუნება და ანაზღაურება</h2>
     <p>
@@ -64,7 +94,10 @@
 
   <!-- English Version -->
   <div id="en" class="lang">
-    <h1>Store Policy</h1>
+    <div class="title-container">
+      <img src="YOUR_IMAGE_URL_HERE" alt="Policy Icon">
+      <h1>Store Policy</h1>
+    </div>
 
     <h2>1. No Returns or Refunds</h2>
     <p>
