@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ka">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>მაღაზიის წესები</title>
   <style>
     body {
@@ -13,7 +13,10 @@
       background: linear-gradient(to top, #1e1e1e, #2a2a2a);
       color: #e0e0e0;
     }
-    h1, h2 { color: #ffffff; }
+    h1,
+    h2 {
+      color: #ffffff;
+    }
     .language-switch {
       text-align: right;
       margin-bottom: 20px;
@@ -27,17 +30,28 @@
       color: #fff;
       transition: background 0.2s ease;
     }
-    .language-switch button:hover { background-color: #3a3a3a; }
-    .lang { display: none; }
-    .lang.active { display: block; }
+    .language-switch button:hover {
+      background-color: #3a3a3a;
+    }
+    .lang {
+      display: none;
+    }
+    .lang.active {
+      display: block;
+    }
     .title-container {
       display: flex;
       align-items: center;
       gap: 15px;
       margin-bottom: 20px;
     }
-    .title-container img { height: 110px; width: auto; }
-    p { color: #cccccc; }
+    .title-container img {
+      height: 110px;
+      width: auto;
+    }
+    p {
+      color: #cccccc;
+    }
     /* About Us button */
     .about-btn {
       background-color: #444;
@@ -48,15 +62,19 @@
       border-radius: 5px;
       margin-top: 20px;
     }
-    .about-btn:hover { background-color: #555; }
+    .about-btn:hover {
+      background-color: #555;
+    }
     /* Modal styles */
     .modal {
       display: none;
       position: fixed;
       z-index: 1000;
-      left: 0; top: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.6);
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
       backdrop-filter: blur(3px);
     }
     .modal-content {
@@ -70,15 +88,19 @@
     }
     .close-btn {
       position: absolute;
-      top: 10px; right: 15px;
-      font-size: 20px; font-weight: bold;
-      cursor: pointer; color: #aaa;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #aaa;
     }
-    .close-btn:hover { color: #fff; }
+    .close-btn:hover {
+      color: #fff;
+    }
   </style>
 </head>
 <body>
-
   <div class="language-switch">
     <button onclick="switchLanguage('ka')">ქართული</button>
     <button onclick="switchLanguage('en')">English</button>
@@ -87,13 +109,20 @@
   <!-- Georgian Version (default) -->
   <div id="ka" class="lang active">
     <div class="title-container">
-      <img src="https://i.ibb.co/M3XV5yD/IMG-1185.png" alt="Policy Icon">
+      <img src="https://i.ibb.co/M3XV5yD/IMG-1185.png" alt="Policy Icon" />
       <h1>მაღაზიის წესები</h1>
     </div>
     <h2>1. დაბრუნება და ანაზღაურება</h2>
-    <p>ყველა გაყიდვა საბოლოოა. არ ვიღებთ დაბრუნებებს, გაცვლას ან ანაზღაურებას. გთხოვთ, ფრთხილად გადაამოწმეთ შეკვეთა შეძენამდე.</p>
+    <p>
+      ყველა გაყიდვა საბოლოოა. არ ვიღებთ დაბრუნებებს, გაცვლას ან ანაზღაურებას.
+      გთხოვთ, ფრთხილად გადაამოწმეთ შეკვეთა შეძენამდე.
+    </p>
     <h2>2. მიწოდება</h2>
-    <p>შეკვეთის გაფორმებიდან ნივთს მიიღებთ 2-3 კვირაში ან შესაძლებელია უფრო ადრეც. როდესაც თქვენი შეკვეთა ჩამოვა საქართველოში და მზად იქნება თქვენთან მოწოდებისთვის, მიიღებთ ინსტაგრამზე შეტყობინებას.</p>
+    <p>
+      შეკვეთის გაფორმებიდან ნივთს მიიღებთ 2-3 კვირაში ან შესაძლებელია უფრო
+      ადრეც. როდესაც თქვენი შეკვეთა ჩამოვა საქართველოში და მზად იქნება
+      თქვენთან მოწოდებისთვის, მიიღებთ ინსტაგრამზე შეტყობინებას.
+    </p>
     <h2>3. კონტაქტი</h2>
     <p>შეკითხვების ან პრობლემების შემთხვევაში დაგვიკავშირდით ინსტაგრამზე.</p>
     <button class="about-btn" onclick="openAbout()">ჩვენ შესახებ</button>
@@ -102,13 +131,19 @@
   <!-- English Version -->
   <div id="en" class="lang">
     <div class="title-container">
-      <img src="https://i.ibb.co/M3XV5yD/IMG-1185.png" alt="Policy Icon">
+      <img src="https://i.ibb.co/M3XV5yD/IMG-1185.png" alt="Policy Icon" />
       <h1>Store Policy</h1>
     </div>
     <h2>1. No Returns or Refunds</h2>
-    <p>All sales are final. We do not accept returns, exchanges, or issue refunds. Please review your order before purchase.</p>
+    <p>
+      All sales are final. We do not accept returns, exchanges, or issue refunds.
+      Please review your order before purchase.
+    </p>
     <h2>2. Shipping</h2>
-    <p>Orders are processed within 2–3 weeks. When your order arrives in Georgia, we will notify you on Instagram.</p>
+    <p>
+      Orders are processed within 2–3 weeks. When your order arrives in Georgia,
+      we will notify you on Instagram.
+    </p>
     <h2>3. Contact</h2>
     <p>For questions, contact us on Instagram.</p>
     <button class="about-btn" onclick="openAbout()">About Us</button>
@@ -124,41 +159,50 @@
   </div>
 
   <script>
+    let currentLang = "ka"; // Move this here to fix button functionality
+
     const aboutContent = {
       ka: {
         title: "ჩვენ შესახებ",
-        text: "ჩვენი მაღაზია გთავაზობთ მაღალი ხარისხის რეპლიკა ასევე ორიგინალ ტანსაცმელს ხელმისაწვდომ ფასებში. ჩვენი მიზანია, რომ უნიკალური სტილი ყველასთვის ხელმისაწვდომი იყოს. თითოეული პროდუქტი ყურადღებით არის შერჩეული. ტანსაცმელი ორიგინალია იმ შემთხვევაში თუ აღწერაში მითითებული აქვს "✅ Original", ტანსაცმელი რომელსაც ჩვეულებრივი აღწერა აქვს ამ მითითების გარეშე, არის საუკეთესო ხარისხის რეპლიკა."
+        text: `ჩვენი მაღაზია გთავაზობთ მაღალი ხარისხის რეპლიკა ასევე ორიგინალ ტანსაცმელს ხელმისაწვდომ ფასებში. 
+              ჩვენი მიზანია, რომ უნიკალური სტილი ყველასთვის ხელმისაწვდომი იყოს. თითოეული პროდუქტი ყურადღებით არის შერჩეული. 
+              ტანსაცმელი ორიგინალია იმ შემთხვევაში თუ აღწერაში მითითებული აქვს "✅ Original", 
+              ტანსაცმელი რომელსაც ჩვეულებრივი აღწერა აქვს ამ მითითების გარეშე, არის საუკეთესო ხარისხის რეპლიკა.`,
       },
       en: {
         title: "About Us",
-        text: "Our store offers high-quality replica and some orignal clothing at affordable prices. Our mission is to make unique style accessible to everyone. Every product is carefully selected. Clothing that are original have a text saying "✅ Orignal" in the description, clothing that has a normal description are the best quality replicas."
-      }
+        text: `Our store offers high-quality replica and some original clothing at affordable prices. 
+              Our mission is to make unique style accessible to everyone. Every product is carefully selected. 
+              Clothing that are original have a text saying "✅ Original" in the description, 
+              clothing that has a normal description are the best quality replicas.`,
+      },
     };
 
     function switchLanguage(lang) {
-      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
-      document.getElementById(lang).classList.add('active');
+      document.querySelectorAll(".lang").forEach((el) =>
+        el.classList.remove("active")
+      );
+      document.getElementById(lang).classList.add("active");
       currentLang = lang;
     }
 
-    let currentLang = 'ka'; // default language
-
     function openAbout() {
-      document.getElementById('aboutTitle').textContent = aboutContent[currentLang].title;
-      document.getElementById('aboutText').textContent = aboutContent[currentLang].text;
-      document.getElementById('aboutModal').style.display = 'block';
+      document.getElementById("aboutTitle").textContent =
+        aboutContent[currentLang].title;
+      document.getElementById("aboutText").textContent =
+        aboutContent[currentLang].text;
+      document.getElementById("aboutModal").style.display = "block";
     }
 
     function closeAbout() {
-      document.getElementById('aboutModal').style.display = 'none';
+      document.getElementById("aboutModal").style.display = "none";
     }
 
-    window.onclick = function(event) {
-      if (event.target == document.getElementById('aboutModal')) {
+    window.onclick = function (event) {
+      if (event.target == document.getElementById("aboutModal")) {
         closeAbout();
       }
-    }
+    };
   </script>
-
 </body>
 </html>
